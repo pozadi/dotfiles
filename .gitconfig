@@ -60,7 +60,7 @@
 [apply]
 
 	# Detect whitespace errors when applying a patch
-	whitespace = fix
+	# whitespace = fix
 
 [core]
 
@@ -71,11 +71,12 @@
 	# Treat spaces before tabs and all kinds of trailing whitespace as an error
 	# [default] trailing-space: looks for spaces at the end of a line
 	# [default] space-before-tab: looks for spaces before tabs at the beginning of a line
-	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+	# whitespace = space-before-tab,-indent-with-non-tab,trailing-space
 
 	# Make `git rebase` safer on OS X
 	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
 	trustctime = false
+
 
 [color]
 
@@ -122,7 +123,9 @@
 	# Use the Git 1.x.x default to avoid errors on machines with old Git
 	# installations. To use `simple` instead, add this to your `~/.extra` file:
 	# `git config --global push.default simple`. See http://git.io/mMah-w.
-	default = matching
+	# default = matching
+
+	default = simple
 
 # URL shorthands
 
@@ -143,5 +146,9 @@
 	pushInsteadOf = "git://gist.github.com/"
 
 [url "git://gist.github.com/"]
-
 	insteadOf = "gist:"
+
+
+[user]
+	name = Roman Pominov
+	email = rpominov@gmail.com
